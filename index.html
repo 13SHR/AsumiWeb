@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <title>Asumi Studio</title>
+        <meta charset="utf-8">
+        <meta name="author" content="Robin Ho-Sun">
+        <meta name="description" content="Site web officiel de Asumi Studio">
+        <meta name="keywords" content="Asumi, Projet, Jeux, Développement">
+
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+        <link rel="stylesheet" href="css/index.css" type="text/css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500i" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Sumana:wght@700&display=swap" rel="stylesheet">
+
+    </head>
+
+    <body>
+        <!-- haut de page -->
+        <header>
+            <div id=logo>
+                <h1><img src="img/logo-mini.png" alt="Logo de Asumi"><a id="titre" href="index.html" title="Revenir à l'accueil">Asumi Studio</a></h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="description.html" title="Aller sur la page de description">Description</a></li>
+                    <li><a href="projets.html" title="Aller sur la page de nos projets">Nos Projets</a></li>
+                    <li><a href="membres.html" title="Aller sur la page des membres">Les Membres</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- contenu principal -->
+        <section>
+            <article>
+                <h1>Accueil</h1>
+                <h2>Bienvenue sur le site décrivant ce studio</h2>
+                
+                <p>Bienvenue sur le site officiel de <mark>Asumi Studio</mark> ! Nous sommes un surdio de développement de jeux vidéos, dans lequel tous les membres, développeurs graphistes ou même compositeurs, s'unissent pour créer à partir de 0 un jeu entier.<br>
+                Ce sudio a été créé à partir de 3 personnes ayant les mêmes ambitions  : créer des jeux pendant notre temps libre.
+                </p>
+
+                <p>Pour en savoir plus, vous pouvez naviguer sur ce site qui décrit notre passion et l'histoire du projet.</p> 
+            </article> 
+        </section>
+
+        <!-- bas de page -->
+        <footer>
+            <div id="contact">
+                <h1>Nous contacter</h1>
+                <ul>
+                    <li>Envoyez nous un mail à <a class="external" href="mailto:asumistudio@gmail.com">asumistudio@gmail.com</a></li>
+                    <li>Rejoignez notre <a class="external" href="https://discord.gg/8x3XbJkttA" target="_blank">discord</a></li>
+                </ul>
+            </div>
+            <div id="credits">
+                <p>Site hébergé par <a href="https://firebase.google.com" class="external" target="_blank">Firebase</a> by Google.</p>
+                <p>©Copyright 2022 par Asumi Studio. Tous droits reservés.</p>    
+            </div>      
+        </footer>
+        <script type="module">
+  // Import the functions you need from the SDKs you need
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/9.9.2/firebase-app.js";
+  import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.9.2/firebase-analytics.js";
+  // TODO: Add SDKs for Firebase products that you want to use
+  // https://firebase.google.com/docs/web/setup#available-libraries
+
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  const firebaseConfig = {
+    apiKey: "AIzaSyCC1NeQSN0nr4T4J3-5ppcziEsKzB3yHDY",
+    authDomain: "asumi-studio.firebaseapp.com",
+    projectId: "asumi-studio",
+    storageBucket: "asumi-studio.appspot.com",
+    messagingSenderId: "400171107870",
+    appId: "1:400171107870:web:6c99888d6c0bcb5271100f",
+    measurementId: "G-8E1RBB78CY"
+  };
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+  const analytics = getAnalytics(app);
+</script>
+    </body>
+</html>
